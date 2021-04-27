@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**************************************************************
@@ -32,14 +31,6 @@ public class Variant {
 	}
 	
 	public static int playGame() {
-//		int[] board = {2, 0, 1, 0, 1, 1, 0, 0, 2};
-//		System.out.println(getValidMovesPlacing(board, 1));
-//		printBoard2D(board);
-//		System.out.println();
-//		board = makeMovePlacing (board, 2, myPlayerPlacing(board, 2));
-//		printBoard2D(board);
-//		System.out.println();
-//		return 0;
 		System.out.println("Note: Squares are labeled:");
 		System.out.println("0 1 2");
 		System.out.println("3 4 5");
@@ -240,15 +231,6 @@ public class Variant {
 		return (int) Math.floor(result);
 	}
 	
-	// For some reason this sometimes returns an invalid move?? (results in a null
-	// pointer exception in playGame() \todo{}
-	
-	// Always happens as second player
-	// During the placing stage given the board
-	// 2 0 1
-	// 0 1 1
-	// 0 0 2
-	// It tries to move at spot 0
 	
 	// Encodes a move and the probability for that move by using
 	// move+0.1*probability
